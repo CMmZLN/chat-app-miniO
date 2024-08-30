@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+
+import 'package:flutter_frontend/constants.dart';
+
+class WelcomeImage extends StatelessWidget {
+  const WelcomeImage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        // const Text(
+        //   "Welcome to MiMo",
+        //   style: TextStyle(fontWeight: FontWeight.bold),
+        // ),
+        // const SizedBox(height: defaultPadding * 2),
+        Row(
+          children: [
+            // const Spacer(),
+            Expanded(
+                child: SizedBox(
+                    width: 250,
+                    height: 200,
+                    child: Image.asset("assets/images/login2.png"))),
+            // const Spacer()
+          ],
+        ),
+        const SizedBox(
+          height: defaultPadding * 2,
+        )
+      ],
+    );
+  }
+}
